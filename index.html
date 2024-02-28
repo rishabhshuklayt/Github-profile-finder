@@ -119,17 +119,6 @@ function convertToPDF() {
             html2pdf().from(element).set(options).save();
 
             
-        }
-        function convertToPDF(profileName) {
-    var element = document.getElementById('mainre');
-    const options = {
-        filename:  data.name + '_profile.pdf', // Specify the name of the downloaded file
-        image: { type: 'jpeg', quality: 0.98 }, // Image options
-        html2canvas: { scale: 2 }, // Scale factor for rendering HTML elements to canvas
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' } // PDF options
-    };
-    html2pdf().from(element).set(options).save();
-}
        
 
 
